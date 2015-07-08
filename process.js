@@ -59,7 +59,7 @@ handler.on('way', filter);
 
 var wstreams = {};
 for (var i = 0; i < hdmLayers.length; i++) {
-  wstreams[hdmLayers[i]] = fs.createWriteStream(hdmLayers[i] + '.json');
+  wstreams[hdmLayers[i]] = fs.createWriteStream('hdm-data/' + hdmLayers[i] + '.json');
 }
 
 
